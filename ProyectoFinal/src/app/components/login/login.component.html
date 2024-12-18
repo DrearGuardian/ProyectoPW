@@ -1,0 +1,31 @@
+<form autocomplete="off">
+
+    <div id="capa_inicio" class="capa_modal_light" style="display: inline; background: url(fondo.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; opacity: 0.7;">
+
+    </div>
+
+    <div style="width: 100%;">
+
+      <div class="ventana_modal" style="width: 96%; max-width: 330px;">
+
+        <div style="width: 100%;">
+          <div class="contenedor_inicio">
+            <div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; margin-top: 20px;">
+              <img src="icono.webp" width="100" style="border-radius: 50%;">
+              <p style="width: 100%; font-weight: bold; font-size: 18px; color: #d97e46; text-align: center; margin-top: 10px;">Control Inventario</p>
+            </div>
+
+            <p style="margin-top: 30px; font-weight: bold; color: #3c6fc0;">Correo electrónico:</p>
+            <input [(ngModel)]="userMail" name="userMail" type="text" class="caja2" style="margin-top: 5px;" placeholder="Correo">
+
+            <p style="margin-top: 20px; font-weight: bold; color: #3c6fc0;">Contraseña:</p>
+            <input [(ngModel)]="password" name="password"  type="password" class="caja2" style="margin-top: 5px;" placeholder="Contraseña">
+
+            <a class="btn_google3" style="width: 100%; display: block; margin-top: 20px;" (click)="login()">Iniciar sesión</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
